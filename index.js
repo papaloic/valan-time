@@ -17,22 +17,31 @@ function stop(){
     document.querySelectorAll('.active').forEach(el => el.classList.remove('active'));
     document.querySelector('.stop_no').classList.add('active');
     document.querySelector('.h1_stop').classList.add('active');
+    document.querySelector('.retry').classList.add('active');
+    song = document.querySelector('.love_song');
+    song.pause();
 
     setTimeout(()=>{
         location.reload()
-    },4000)
+    },5000)
 }
 
 function yes_but(){
     document.querySelectorAll('.active').forEach(el => el.classList.remove('active'));
     document.querySelector('.merci_but').classList.add('active');
-    document.querySelector('.accept_but').classList.add('active');
+    video = document.querySelector('.accept_but');
+    video.classList.add('active');
+    video.setAttribute("autoplay","");
+    song = document.querySelector('.love_song');
+    song.pause();
 }
 
 function thank(){
     document.querySelectorAll('.active').forEach(el => el.classList.remove('active'));
     document.querySelector('.merci').classList.add('active');
-    document.querySelector('.accept').classList.add('active');
+    video = document.querySelector('.accept');
+    video.classList.add('active');
+    video.setAttribute("autoplay","");
 }
 
 let count = 0;
