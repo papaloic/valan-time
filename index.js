@@ -42,6 +42,7 @@ function thank(){
     video = document.querySelector('.accept');
     video.classList.add('active');
     video.setAttribute("autoplay","");
+    document.querySelector('.merci2').classList.add('active');
 }
 
 let count = 0;
