@@ -51,7 +51,7 @@ const bouton_no = document.querySelector('.no');
 bouton_no.addEventListener('mouseover',() => {
     move();
     count++;
-    if(count > 6){
+    if(count > 4){
         console.log(count);
         nb_reload++;
         localStorage.setItem('reloadCount',nb_reload)
